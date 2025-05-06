@@ -148,9 +148,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 403400324f8083f4fb9ff4ee269e7bfd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MinBounds: {x: -10, y: -10, z: -10}
-  MaxBounds: {x: 10, y: 10, z: 10}
-  BoundaryForce: 1
+  MinBounds: {x: -20, y: -20, z: -5}
+  MaxBounds: {x: 20, y: 20, z: 5}
+  BoundaryForce: 5
   BoundaryDistance: 5
 --- !u!4 &958027829
 Transform:
@@ -212,10 +212,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BoidPrefab: {fileID: 379649973786661659, guid: f2d16bc15862ec440a3556b4c1745ec5, type: 3}
-  NumberOfBoids: 3000
-  SpawnBounds: {x: 5, y: 5, z: 5}
+  NumberOfBoids: 15000
+  SpawnBounds: {x: 10, y: 10, z: 10}
   RandomizeVelocity: 1
-  InitialSpeedRange: {x: 1, y: 3}
+  InitialSpeedRange: {x: 1, y: 10}
   RandomSeed: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

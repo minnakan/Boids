@@ -104,6 +104,8 @@ public partial class BoidSpawnerSystem : SystemBase
                     // Create entity from prefab
                     Entity boidEntity = ecb.Instantiate(spawnerProps.BoidPrefab);
 
+                    ecb.AddComponent<BoidCellData>(boidEntity, new BoidCellData { CellIndex = 0 });
+
                     // Generate random position within bounds
                     float3 position = new float3(
                         random.NextFloat(-spawnerProps.SpawnBounds.x, spawnerProps.SpawnBounds.x),
